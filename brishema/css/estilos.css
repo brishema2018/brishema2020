@@ -1,0 +1,393 @@
+html {
+box-sizing: border-box;
+font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    
+}
+
+
+
+/** Globales **/
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+h1{
+    font-size: 38px;
+}
+
+h2{
+    font-size: 34px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 22px;
+}
+
+/**utilidades**/
+.seccion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+
+}
+.dblock {
+    display: block!important;
+}
+.contenido-centrado{
+    max-width: 800px;
+}
+
+/**botnoes**/
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    padding:  10px 30px;
+    margin-top:30px ;
+    display: inline-block;
+    text-align: center;
+    border: none; 
+}
+.boton:hover {
+    cursor: pointer;
+}
+    
+     .boton-amarillo {
+         background-color: #e08709;
+    
+     }
+     .boton-verde {
+        background-color: #71b100;
+    
+    }
+/** header**/
+.site-header {
+    background-color: #333333;
+    padding: 10px 0 30px 0;
+}
+
+.site-header.inicio {
+    background:url(../img/header.jpg);
+    background-position: center center;s
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+
+    .contenido-header h1{
+    color:white;
+    padding-bottom: 30px;
+    max-width: 600px;
+    line-height: 50px;
+
+    }
+/** Barra de navegacion **/
+.navegacion a {
+color: white;
+text-decoration: none;
+font-size: 20px;
+margin-right: 20px;
+
+}
+.navegacion a:hover {
+    color: rgb(25, 160, 194);
+}
+.navegacion a:last-of-type {
+    margin: 0;
+}
+/** iconos nosotros**/
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+
+}
+.icono {
+    flex-basis: calc(33.3% - 10px);
+    text-align: justify;
+
+}
+ .icono h3 {
+     text-transform: uppercase;
+ }
+
+ /**anuncios**/
+ .contenedor-anuncios {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap:wrap ;/**Para pasar las divisiones a la otra fila**/
+ }
+ .anuncio {
+     flex-shrink: 0;/*para q se mantenga el tamaño de divison de flex basis y luego usar el flex-wrap*/
+     flex-basis: calc(33.3% - 10px);
+     border-style: solid;
+     border-color:#b5b5b5;
+     border-width: 2px;
+     margin-bottom: 20px;
+/** tambien puedes usar BORDER: 1PX SOLID #B5B5B5 es lo mismo de los 3 border**/
+background:#c7eaf8;
+ }
+ .contenido-anuncio {
+     padding: 20px;
+ }
+ .contenido-anuncio h3, .contenido-anuncio p {
+     margin: 0px;
+
+ }
+ .precio {
+     color: #71b100;
+     font-weight: 700;
+ }
+
+ .iconos-caracteristicas {
+     list-style: none;
+     padding: 0px;
+     display: flex;
+     justify-content: space-evenly;
+     flex: 1;
+     max-width: 500px;
+
+ }
+ .iconos-caracteristicas li {
+     /**flex: 1;**/
+     display: flex;
+ }
+
+ .iconos-caracteristicas li img {
+     margin-right: 20px;
+ }
+ .vertodas {
+     display: flex;
+     justify-content: flex-end;
+ }
+ .imagen-contacto {
+     background-image: url(../img/encuentra.jpg);
+     background-position: center center;
+     background-size: cover;
+     height: 400px;
+     display: flex;
+     align-items: center;
+     
+ }
+ .contenido-contacto {
+     flex: 1;
+     color: white;
+     
+ }
+ .contenido.contacto p {
+     font-size: 16px;
+ }
+ /**seccion inferior**/
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.seccion-inferior .blog{
+    flex-basis: 60%;
+
+}
+
+.seccion-inferior .Testimoniales {
+    flex-basis: calc(40% - 20px);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/** linea q elimina frnaja de la parte inferior de la imagen**/
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+flex-basis: 40%;
+
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 30px);
+}
+.texto-entrada a {
+    color: black;
+    text-decoration: none;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height:1.4;
+}
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    background-color: chartreuse;
+margin-top: 10px;
+}
+.texto-entrada span {
+    color: coral;
+}
+
+/** testimonial **/
+.testimonial {
+    background-color: darkgreen;
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.testimonial p {
+    text-align: right;
+}
+.testimonial blockquote::before {
+    content:'';
+    background-image: url(../img/comilla.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -20px;
+
+
+}
+
+.testimonial blockquote {
+position: relative;
+padding: 25px;
+font-weight: 300;
+
+}
+
+.site-footer {
+    background-color: #333333;
+    margin: 0px;
+
+
+}
+
+.contenedor-footer {
+    padding:30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: white;
+}
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
+    .contenido-nosotros blockquote {
+font-weight: 900;
+font-size: 20px;
+margin: 0px;
+padding: 30px 0;
+    }
+/** Remplazo todas estas lineas display flex x display grid y evito agregar flex basis
+.contenido-nosotros {
+    display: grid
+}
+.contenido-nosotros .image{
+    flex-basis: 40%;
+}
+.contenido-nosotros .texto-nosotros{
+    flex-basis:calc(60% - 20px);
+}**/
+
+/*anuncio*/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+.texto-entrada p{
+    text-align: justify;
+}
+
+legend {
+    font-size: 20px;
+    color: #4f4f4f;
+}
+.contacto p{
+    font-size: 14px;
+    color: #4f4f4f;
+    margin: 20px 0 0 0;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]), textarea {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color:#e1e1e1;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    color: seagreen;
+}
+input [type="radio"] {
+    width: auto;
+    margin: 0;
+
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+   height: 200px;
+   
+}
+.forma-contacto {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
